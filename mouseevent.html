@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+<body>
+
+    <button id="mybutton">Click me!</button>
+    <p id="click">click</p>
+    <p id="dblclick">DoubleClick</p>
+    <p id="mousedown"> mousedown</p>
+    <p id="mouseup">mouseup</p>
+    <p id="mousemove">mousemove</p>
+    <p id="mouseenter">mouseenter</p>
+    <p id="mouseleave">mouseleave</p>
+
+     <script>
+        //click
+        var click=document.getElementById('click');
+
+        click.addEventListener('click', function(){
+            console.log('Click Event Trigged,');
+        });
+        //doubleclick
+        var dblclick=document.getElementById('dblclick');
+
+        dblclick.addEventListener('dblclick', function(){
+            console.log('double-Click Event Trigged,');
+        });
+        // mousedown
+        var mousedown=document.getElementById('mousedown');
+
+        mousedown.addEventListener('mousedown', function(){
+            console.log('mouse down Event Trigged,');
+        });
+
+       //mouseup
+        var mouseup=document.getElementById('mouseup');
+
+        mouseup.addEventListener('mouseup', function(){
+        console.log('mouseup Event Trigged,');
+        });
+        //mousemove
+        var mousemove=document.getElementById('mousemove');
+
+        mousemove.addEventListener('mousemove', function(){
+        console.log('mousemove Event Trigged,');
+        });
+
+        var mouseenter=document.getElementById('mouseenter');
+
+        mouseenter.addEventListener('mouseenter', function(){
+        console.log('mouseenter Event Trigged,');
+        });
+
+        var mouseleave=document.getElementById('mouseleave');
+
+        mouseleave.addEventListener('mouseleave', function(){
+        console.log('mouseleave Event Trigged,');
+        });
+     </script>
+</body>
+</html>
