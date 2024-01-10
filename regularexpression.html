@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form >
+        <label for="email" id="email">Email:</label>
+        <input type="email" id="email"><br><br>
+        <button>submit</button>
+    </form> -->
+    <script>
+    let sen="stephen"
+        
+    let a=/e/g     //regex syntax //global search
+    console.log(sen.match(a));
+    console.log(a.test(sen));
+    console.log(sen.search(a));
+
+
+    let caps=/s/gi //ignore cassentive
+    let magic ='Welcome To Stephen'
+    console.log(magic.search(caps))
+       
+    let bike='People use\n different types'
+    console.log(bike);
+    let more=/m/mgi
+
+    //bracket
+    let bracket='stephen Raj elsha poovarasan'
+    let vowels=/[aeiou]/g;
+    console.log(bracket.match(vowels));
+
+    let add='stephen Raj elsha poovarasan'
+    let pad=/[^aeiou]/g;
+    console.log(add.match(pad));
+
+    let start='This class going to  @ complete 3 the javascript'
+    let onlyspace=/\w/g;   //\s-space values \S-reject space \w-number and letter \W-space and spcial charactor
+    console.log(start);
+    console.log(start.match(onlyspace));
+
+    let art='This class going to  @ complete 3 the javascript'
+    let space=/to\b/g;   
+    console.log(art);
+    console.log(space.test(art));
+       
+    let username='16Stephen'
+    let chack=/^[A-Z]/
+    console.log(chack.test(username));
+
+    let mail='.com'
+    let chack1=/(.com)$/
+    console.log(chack1.test(mail));
+
+    let mission=' His name is sridhar.His mission has SJ.'
+
+    let is=/i+s?/g;
+    console.log(mission.match(is));
+
+    let amount='1 10 222 333 4444 55555';
+
+    let number=/\d{3,3}/g
+    console.log(amount.match(number));
+
+    // let formInput=document.getElementById('email');
+    // formInput.addEventListener('email',function(){
+    // formInput.textContent='submit event triggered.color pattern:'+formInput.value
+    //  });
+
+    // //         document.addEventListener('submit',function(event){
+    // //     console.log('submit triggered.key code: '+event.value);  
+    // //  });
+
+       let gmail='STephenraj16@gmail.com'
+       let check=/^[A-Z]{2}[a-z0-9]{5,10}[@](gmail|email)\.(com)$/
+    //    console.log(gmail.match(check));
+       console.log(check.test(gmail));
+
+    </script>
+</body>
+</html>
